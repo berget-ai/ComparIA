@@ -1731,5 +1731,76 @@
         }
       }
     ]
+  },
+  {
+    "name": "Berget AI",
+    "icon_path": "berget.svg",
+    "proprietary_license_desc": "Berget AI tillhandahåller EU-kompatibla API:er för kraftfulla AI-modeller med öppen källkod, med fokus på europeiska språk och datasuveränitet.",
+    "models": [
+      {
+        "id": "berget-llama-3.1-8b",
+        "simple_name": "Llama 3.1 8B (Berget)",
+        "license": "Llama 3.1",
+        "release_date": "07/2024",
+        "arch": "dense",
+        "params": 8,
+        "url": "https://berget.ai/models",
+        "endpoint": {
+          "api_base": "https://api.berget.ai/v1",
+          "api_model_id": "meta-llama/Llama-3.1-8B-Instruct"
+        },
+        "desc": "Liten modell optimerad för svenska och europeiska språk, hostad på svensk infrastruktur med GDPR-kompatibilitet.",
+        "size_desc": "Med 8 miljarder parametrar är detta en liten modell som kan köras effektivt med begränsade resurser. Dess kontextfönster på 128 000 tokens möjliggör bearbetning av långa dokument.",
+        "fyi": "Denna modell körs på Berget AIs infrastruktur i Sverige, vilket garanterar GDPR-kompatibilitet och att data stannar inom EU. Berget AI specialiserar sig på europeiska språk och erbjuder förbättrat stöd för svenska."
+      },
+      {
+        "id": "berget-llama-3.3-70b",
+        "simple_name": "Llama 3.3 70B (Berget)",
+        "license": "Llama 3.3",
+        "release_date": "12/2024",
+        "arch": "dense",
+        "params": 70,
+        "url": "https://berget.ai/models",
+        "endpoint": {
+          "api_base": "https://api.berget.ai/v1",
+          "api_model_id": "meta-llama/Llama-3.3-70B-Instruct"
+        },
+        "desc": "Stor modell med utmärkt prestanda för komplexa uppgifter, hostad på svensk infrastruktur för maximal datasäkerhet.",
+        "size_desc": "Med 70 miljarder parametrar tillhör denna modell kategorin stora modeller. Den erbjuder hög prestanda för avancerade uppgifter med ett kontextfönster på 128 000 tokens.",
+        "fyi": "Llama 3.3 70B på Berget AI kombinerar Metas kraftfulla modell med svensk hosting som garanterar datasuveränitet. All bearbetning sker inom EU utan att data lämnar Sverige."
+      },
+      {
+        "id": "berget-qwen3-32b",
+        "simple_name": "Qwen3 32B (Berget)",
+        "license": "Apache 2.0",
+        "release_date": "04/2025",
+        "arch": "dense",
+        "params": 32,
+        "url": "https://berget.ai/models",
+        "endpoint": {
+          "api_base": "https://api.berget.ai/v1",
+          "api_model_id": "Qwen/Qwen3-32B"
+        },
+        "desc": "Mångsidig modell av mellanklass med bra flerspråkigt stöd, optimerad för europeiska användningsfall.",
+        "size_desc": "Med 32 miljarder parametrar är detta en modell av mellanklass som erbjuder en bra balans mellan prestanda och effektivitet.",
+        "fyi": "Qwen3 är en kraftfull modell från Alibaba som Berget AI erbjuder med EU-hosting. Den har utmärkt stöd för flera språk inklusive svenska och andra europeiska språk."
+      },
+      {
+        "id": "berget-mistral-small",
+        "simple_name": "Mistral Small (Berget)",
+        "license": "Apache 2.0",
+        "release_date": "09/2024",
+        "arch": "dense",
+        "params": 22,
+        "url": "https://berget.ai/models",
+        "endpoint": {
+          "api_base": "https://api.berget.ai/v1",
+          "api_model_id": "mistralai/Mistral-Small-24B-Instruct-2501"
+        },
+        "desc": "Effektiv modell från det europeiska företaget Mistral AI, optimerad för snabba svar med låg latens.",
+        "size_desc": "Med cirka 22 miljarder parametrar är Mistral Small en effektiv modell som balanserar kvalitet och hastighet.",
+        "fyi": "Mistral Small är utvecklad av det franska företaget Mistral AI och representerar europeisk AI-innovation. På Berget AI körs den med full GDPR-kompatibilitet."
+      }
+    ]
   }
 ]
