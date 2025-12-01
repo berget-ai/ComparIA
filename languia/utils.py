@@ -514,6 +514,7 @@ def get_api_key(endpoint: "Endpoint"):
     Different providers require different API keys:
     - Albert (French LLM): ALBERT_KEY
     - HuggingFace Inference: HF_INFERENCE_KEY
+    - Berget AI (Swedish): BERGET_API_KEY
     - OpenRouter/Vertex: handled by LiteLLM from env variables
 
     Args:
@@ -533,6 +534,10 @@ def get_api_key(endpoint: "Endpoint"):
     # HuggingFace Inference API
     if endpoint.get("api_base") and "huggingface.co" in endpoint.get("api_base"):
         return os.getenv("HF_INFERENCE_KEY")
+    # Berget AI - Swedish AI provider
+    # "api_base": "https://api.berget.ai/v1"
+    if endpoint.get("api_base") and "api.berget.ai" in endpoint.get("api_base"):
+        return os.getenv("BERGET_API_KEY")
     # OpenRouter and Vertex AI are handled by LiteLLM reading env variables directly
     # OPENROUTER_API_KEY and Google credentials are checked automatically
     # Normally no need for OpenRouter, litellm reads OPENROUTER_API_KEY env value
